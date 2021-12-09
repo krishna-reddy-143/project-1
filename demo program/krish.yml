@@ -1,0 +1,35 @@
+courses:
+  course_name: "ielts full course"
+  version: 1.5
+  price: &price 199
+  is_public: true
+  release_date: 2021-04-05 12:23:22
+  pre_enroll: null
+  tags:
+    - python
+    - web developer
+    - mysql
+  course_ta: ["krish", "tharun","ram"]
+  ta_details:
+    - name: "krish"
+      email: "krsih@lco.dev"
+      role: "content admin"
+    - name: "tharun"
+      email: "tharun@lco.dev"
+      role: "discussion admin"
+    - {name: "manohar", email: "manohar@lco.dev", role: "devops" }
+  short_desc: >
+    here is a short
+    description for ielts topics
+  long_desc: |
+    now we can store
+      all identation
+    and related things
+  process_payment: *price 
+
+  adv: &adv
+    mykey: myval
+  
+  another_adv:
+    one: two
+    <<: *adv
